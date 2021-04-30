@@ -75,7 +75,6 @@ public class CommandeController {
          throws ResourceNotFoundException {
         Commande commande = repository.findById(commandeId)
        .orElseThrow(() -> new ResourceNotFoundException("Commande not found for this id :: " + commandeId));
-
         repository.delete(commande);
         Map<String, Boolean> response = new HashMap<>();
         response.put("deleted", Boolean.TRUE);

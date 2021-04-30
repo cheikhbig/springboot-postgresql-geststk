@@ -13,6 +13,6 @@ import com.projet.GestionStock.model.Produit;
  *
  */
 @Repository
-public interface ProduitRepository extends JpaRepository<Produit, Integer> {
+public interface ProduitRepository extends JpaRepository<Produit, Long> {
 
 }
